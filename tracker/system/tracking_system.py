@@ -166,3 +166,13 @@ class TrackingSystem:
             )
 
         return np.array(traces)
+
+    def get_position_covariance(self):
+        return self.ekf.get_covariance()[:2, :2]
+
+    def get_position_uncertainty(self):
+        P = self.get_position_covariance()
+
+        return np.sqrt(
+            np.trace(P) / 2
+        )
