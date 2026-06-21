@@ -1,0 +1,17 @@
+nodes:
+
+  - id: B1
+    type: bearing
+    position: [0.0, 0.0]
+    sigma_az_deg: 1.0
+
+  - id: R1
+    type: range
+    position: [200.0, 0.0]
+    sigma_r_m: 5.0
+
+  - id: RB1
+    type: range_bearing
+    position: [100.0, 150.0]
+    sigma_r_m: 3.0
+    sigma_az_deg: 0.5

@@ -1,0 +1,23 @@
+simulation:
+
+  dt: 1.0
+  steps: 300
+
+ekf:
+
+  initial_state:
+    - 10.0
+    - 10.0
+    - 0.0
+    - 0.0
+
+  initial_covariance:
+    - [100.0, 0.0, 0.0, 0.0]
+    - [0.0, 100.0, 0.0, 0.0]
+    - [0.0, 0.0, 25.0, 0.0]
+    - [0.0, 0.0, 0.0, 25.0]
+
+  process_noise_std: 0.5
+
+scenario:
+  type: circular
